@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+
+<h4>Please enter search query</h4>
+
+<div>
+    <form id="tweet-search" method="post" enctype="multipart/form-data">
+    
+        <input type="text" name="keyword" id="keyword">
+        <label for="imageUpload" class="upload-label" id = "predict">
+            Search And Analyze
+        </label>
+    </form>
+
+    <div class="loader" style="display:none;"></div>
+
+    <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+
+</div>
+
+{% endblock %}
